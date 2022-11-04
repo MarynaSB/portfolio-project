@@ -1,6 +1,7 @@
 :root {
     --branding-color: #6c63ff;
     --secondary-color: #f9f7fe;
+    --third-color: #272142;
     --heading-font-family: 'Playfair Display', serif;
     --default-font-family: 'Poppins', sans-serif;
 }
@@ -28,6 +29,17 @@ p {
     line-height: 30px;
 }
 
+.nav-link.active.home {
+    color: var(--branding-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 15px;
+}
+
 .hero {
     background: var(--secondary-color);
     text-align: center;
@@ -40,7 +52,7 @@ p {
 }
 
 .hero h2 {
-    color: #272142;
+    color: var(--third-color);
     font-weight: normal;
     font-size: 24px;
     line-height: 1.5;
@@ -68,6 +80,69 @@ p {
     padding: 120px 60px;
 }
 
+.job {
+    background: var(--secondary-color);
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: 100px;
+}    
+
+.col-md-8 {
+    padding: 0 0 0 50px;
+}
+
+.col-md-4 {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.job h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.job p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--third-color);
+}
+
+.btn-contact {
+    background: var(--branding-color);
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+}        
+
+.email-link {
+    color: var(--third-color);
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+.social-network-container a {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--branding-color);
+    margin: 0 20px;
+    background: rgba(108, 99, 255, 0.05);
+    border-radius: 40px;
+    padding: 10px 15px;
+}
+
+.social-network-container a:hover {
+    border: 1px solid var(--branding-color);
+}
+
 @media (max-width: 960px) {
     h1 {
         font-size: 44px;
@@ -77,12 +152,34 @@ p {
         font-size: 44px;
     }
 
+    .navbar-brand {
+    font-size: 16px;
+    }
+
     .hero {
         padding: 80px 20px;
     } 
 
     .project-description {
         padding: 0;
+        text-align: center;
+    }
+
+    .job {
+        margin-top: 50px;
+    }
+
+    .col-md-8 {
+        padding: 0;
+    }
+
+    .job h2 {
+        font-size: 36px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    
+    .job p {
         text-align: center;
     }
 }
