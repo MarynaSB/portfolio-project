@@ -143,23 +143,39 @@ p {
     border: 1px solid var(--branding-color);
 }
 
-.about-section {
+.content-container {
     padding: 120px 60px;
 }
 
-.about-section h1 {
+.content h1 {
     font-size: 64px;
     line-height: 80px;
 }
 
-.about-section h2 {
+.content h2 {
     font-size: 18px;
     font-family: var(--default-font-family);
 }
 
-.about-section-content {
+.content h3 {
+font-size: 24px;
+font-family: var(--default-font-family);
+font-weight: 700;
+line-height: 1.5;
+}
+
+.content p {
+    font-size: 14px;
+}
+
+.content {
     margin: 30px;
 }
+
+.round-img {
+    border-radius: 15px;
+}
+
 
 @media (max-width: 960px) {
     h1 {
@@ -202,7 +218,7 @@ p {
         text-align: center;
     }
 
-    .about-section {
+    .content {
         text-align: center;
         padding: 0;
     }
