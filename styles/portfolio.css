@@ -23,6 +23,10 @@ h2 {
     font-size: 62px;
 }
 
+h4 {
+    font-size: 48px;
+}
+
 p {
     font-weight: normal;
     font-size: 16px;
@@ -88,42 +92,35 @@ p {
     padding: 120px 60px;
 }
 
-.job {
+.contact-box {
     background: var(--secondary-color);
     border-radius: 20px;
-    padding: 50px;
+    padding: 50px 120px;
     margin-top: 100px;
 }    
 
-.col-md-8 {
-    padding: 0 0 0 50px;
-}
-
-.col-md-4 {
-    text-align: center;
-    padding-top: 25px;
-}
-
-.job h2 {
+.contact-box h2 {
     font-weight: 700;
     font-size: 48px;
     line-height: 64px;
 }
 
-.job p {
+.contact-box p {
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
     color: var(--third-color);
+    margin: 0;
 }
 
-.btn-contact {
+.contact-btn {
     background: var(--branding-color);
     color: white;
     border-radius: 4px;
     font-size: 18px;
     line-height: 27px;
     padding: 15px 30px;
+    margin-top: 15px;
 }        
 
 .email-link {
@@ -135,9 +132,10 @@ p {
 
 .email-link:hover {
     text-decoration: underline;
+    color: var(--branding-color);
 }
 
-.social-network-container a {
+.social-links a {
     font-size: 20px;
     line-height: 24px;
     color: var(--branding-color);
@@ -145,10 +143,12 @@ p {
     background: rgba(108, 99, 255, 0.05);
     border-radius: 40px;
     padding: 10px 15px;
+    transition: all 100ms ease-in-out;
 }
 
-.social-network-container a:hover {
-    border: 1px solid var(--branding-color);
+.social-links a:hover {
+    color: white;
+    background: var(--branding-color);
 }
 
 .content-container {
@@ -194,10 +194,6 @@ line-height: 1.5;
         font-size: 44px;
     }
 
-    .navbar-brand {
-    font-size: 16px;
-    }
-
     .hero {
         padding: 80px 20px;
     } 
@@ -207,22 +203,25 @@ line-height: 1.5;
         text-align: center;
     }
 
-    .job {
+    .contact-box {
         margin-top: 50px;
+        padding: 20px 40px;
     }
 
-    .col-md-8 {
-        padding: 0;
-    }
-
-    .job h2 {
-        font-size: 36px;
+    .contact-box h4 {
+        font-size: 26px;
         line-height: 1.5;
-        text-align: center;
     }
-    
-    .job p {
-        text-align: center;
+
+    .contact-box p {
+        font-size: 14px;
+    }
+
+    .contact-btn{
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px 20px;
+        margin: 20px 0 0 20px;
     }
 
     .content {
