@@ -29,16 +29,25 @@ p {
     line-height: 30px;
 }
 
-.nav-link.active.home {
-    color: var(--branding-color);
+.logo {
+    max-height: 40px;
 }
+
+.nav {
+    padding: 20px 0;
+} 
 
 .nav-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    margin: 0 15px;
+    padding: 0 15px;
 }
+
+.navbar-nav .nav-link.active { 
+    color: var(--branding-color);
+}
+
 
 .hero {
     background: var(--secondary-color);
@@ -175,7 +184,6 @@ line-height: 1.5;
 .round-img {
     border-radius: 15px;
 }
-
 
 @media (max-width: 960px) {
     h1 {
